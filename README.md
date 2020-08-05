@@ -1,4 +1,4 @@
-## Bem vindo a página da profa. Ana Paula Müller Giancoli
+## Bem vindo a página da Profa. Dra. Ana Paula Müller Giancoli
 
 Para ler os conteúdos publicados, faça o download e abra em qualquer navegador.
 
