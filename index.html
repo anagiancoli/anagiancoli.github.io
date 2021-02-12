@@ -171,35 +171,45 @@
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Nome Completo</label>
-                                    <input class="form-control" id="name" type="text" placeholder="Nome Completo" required="required" data-validation-required-message="Please enter your name." />
+                                    <input class="form-control" id="name" type="text" placeholder="Nome Completo" required="required" data-validation-required-message="Por favor, informe seu nome completo." />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Email</label>
-                                    <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email address." />
+                                    <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Por favor, informe seu email." />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Whatsapp</label>
-                                    <input class="form-control" id="phone" type="tel" placeholder="Whatsapp" required="required" data-validation-required-message="Please enter your phone number." />
+                                    <input class="form-control" id="phone" type="tel" placeholder="Whatsapp" required="required" data-validation-required-message="Por favor entre com seu número do Whataspp." />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Mensagem</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Mensagem" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Mensagem" required="required" data-validation-required-message="Por favor, digite sua mensagem."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <br />
                             <div id="success"></div>
-                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Enviar</button></div>
+                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit" onclick="enviar()">Enviar</button></div>
                         </form>
+                        <script>
+                            function enviar() {
+                                nome = document.getElementById('name').value;
+                                message = document.getElementById('message').value;
+                                telefone = document.getElementById('phone').value;
+                                email = document.getElementById('email').value;
+                                subject = "Mensagem enviada pela página do Github por: " + nome + " - Whatsapp: " + telefone;
+                                window.open('mailto:paulagiancoli@ifsp.edu.br?subject='+subject+'&body='+message);  
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
@@ -483,7 +493,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Contact form JS-->
         <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
+        <script src="">
+            /* assets/mail/contact_me.js */
+        </script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
