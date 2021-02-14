@@ -10393,12 +10393,15 @@ form .row:first-child .floating-label-form-group {
  .lp2a:hover:after,
  .lp2b:hover, 
  .lp2b:hover:after{
+      color:#15ea9c;
       background-color: #2c3e50;
   }
 
+
+
   .dwe, 
   .dwe:after{
-       background-color: #fc6f03;
+       background-color:darkblue;
    }
 
   .lp2a, 
@@ -10416,7 +10419,7 @@ form .row:first-child .floating-label-form-group {
       background-color: #15ea9c;
   }
   
-  
+
   @media only screen and (max-width: 990px){
       .main-timeline{ width: 100%; }
   }
