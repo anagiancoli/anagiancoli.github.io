@@ -55,6 +55,11 @@
 <div>
   <a href="https://anagiancoli.github.io"><img align="center" alt="Ana-Github" height="30" width="40" src='https://github.com/devicons/devicon/blob/master/icons/github/github-original-wordmark.svg'></a>
 </div>
-  
+
+<div align="right">
+  <span>
+      Desenvolvido com <img height="15" width="15" src="https://user-images.githubusercontent.com/8120329/127778059-ae0c5a3b-df37-467e-a869-29cfece4ddcf.png"/> por <strong> Ana Giancoli <span className="text-danger"></span></strong>
+  </span>
+</div>
 
  
